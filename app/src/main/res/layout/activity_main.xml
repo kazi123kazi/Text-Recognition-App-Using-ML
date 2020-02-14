@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/imageView"
+        />
+
+    <Button
+        android:id="@+id/capture_image_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detect_image_Text"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Capture Image"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/detect_image_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Detect Text"
+        android:textColor="@color/colorPrimaryDark"
+        />
+</RelativeLayout>
